@@ -18,7 +18,7 @@ class StatsOps:
         list_sort = sorted(data)
         index = (list_len - 1) // 2
 
-        if list_len % 2 == 0:
+        if list_len % 2 == 1:
             return list_sort[index]
         else:
             return (list_sort[index] + list_sort[index + 1]) / 2
