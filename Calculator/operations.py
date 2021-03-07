@@ -15,3 +15,11 @@ class Operations:
     @staticmethod
     def division(a, b):
         return round(float(b) / float(a), 9)
+
+    @staticmethod
+    def squaring(a):
+        return float(a) ** 2
+
+    @staticmethod
+    def squarerooting(a):
+        return round((float(a) ** .5), 8)
