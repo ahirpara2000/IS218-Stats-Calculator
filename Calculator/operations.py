@@ -1,5 +1,8 @@
 class Operations:
 
+    def __init__(self):
+        pass
+
     @staticmethod
     def addition(a, b):
         return float(a) + float(b)
