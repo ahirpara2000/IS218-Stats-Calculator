@@ -10,4 +10,4 @@ class StatsOps:
     def mean(data):
         data_len = len(data)
         total = sum(data)
-        return Operations.division(total, data_len)
+        return Operations.division(data_len, total)
