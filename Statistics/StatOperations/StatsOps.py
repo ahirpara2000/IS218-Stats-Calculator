@@ -11,3 +11,14 @@ class StatsOps:
         data_len = len(data)
         total = sum(data)
         return Operations.division(data_len, total)
+
+    @staticmethod
+    def median(data):
+        list_len = len(data)
+        list_sort = sorted(data)
+        index = (list_len - 1) // 2
+
+        if list_len % 2 == 0:
+            return list_sort[index]
+        else:
+            return (list_sort[index] + list_sort[index + 1]) / 2
