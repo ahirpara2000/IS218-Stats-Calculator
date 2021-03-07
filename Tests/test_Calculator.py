@@ -39,6 +39,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
+    def test_divide_method_for_zero_calculator(self):
+        self.assertEqual(self.calculator.divide(0, 10), "Can't divide a number by zero")
+        self.assertEqual(self.calculator.result, "Can't divide a number by zero")
+
     def test_square_method_calculator(self):
         test_data = CsvReader('Tests/Data/UnitTestSquare.csv').data
         for row in test_data:

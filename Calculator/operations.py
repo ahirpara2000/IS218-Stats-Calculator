@@ -14,7 +14,10 @@ class Operations:
 
     @staticmethod
     def division(a, b):
-        return round(float(b) / float(a), 9)
+        try:
+            return round(float(b) / float(a), 9)
+        except ZeroDivisionError:
+            return "Can't divide a number by zero"
 
     @staticmethod
     def squaring(a):
