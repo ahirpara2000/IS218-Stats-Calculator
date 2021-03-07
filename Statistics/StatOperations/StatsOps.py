@@ -1,5 +1,6 @@
 from Calculator.Operations.operations import Operations
 
+
 class StatsOps:
 
     def __init__(self):
@@ -7,4 +8,6 @@ class StatsOps:
 
     @staticmethod
     def mean(data):
-        pass
+        data_len = len(data)
+        total = sum(data)
+        return Operations.division(total, data_len)

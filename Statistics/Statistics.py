@@ -1,6 +1,7 @@
 from Calculator.Calculator import Calculator
 from Statistics.StatOperations.StatsOps import StatsOps
 
+
 class Statistics(Calculator):
     data = []
 
