@@ -22,3 +22,16 @@ class StatsOps:
             return list_sort[index]
         else:
             return (list_sort[index] + list_sort[index + 1]) / 2
+
+    @staticmethod
+    def mod(data):
+        counter = 0
+        num = data[0]
+
+        for i in data:
+            curr_frequency = data.count(i)
+            if curr_frequency > counter:
+                counter = curr_frequency
+                num = i
+
+        return num
