@@ -1,5 +1,5 @@
 from Calculator.Operations.operations import Operations
-
+from Statistics.Statistics import Statistics
 
 class StatsOps:
 
@@ -24,7 +24,7 @@ class StatsOps:
             return (list_sort[index] + list_sort[index + 1]) / 2
 
     @staticmethod
-    def mod(data):
+    def mode(data):
         counter = 0
         num = data[0]
 
@@ -35,3 +35,13 @@ class StatsOps:
                 num = i
 
         return num
+
+    @staticmethod
+    def variance(data):
+        data_mean = Statistics.mean(data)
+        x = 0
+
+        for num in data:
+            x = x + Operations.squaring(num - data_mean)
+
+        return Operations.division(len(data), x)

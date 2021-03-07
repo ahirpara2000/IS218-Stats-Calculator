@@ -24,3 +24,7 @@ class MyTestCase(unittest.TestCase):
         # array with even length
         self.assertEqual(self.statistics.median([3, 4, 1, 2]), 2.5)
         self.assertEqual(self.statistics.result, 2.5)
+
+    def test_mod_method_statistics(self):
+        self.assertEqual(self.statistics.mode([1, 2, 2, 3, 3, 2]), 2)
+        self.assertEqual(self.statistics.result, 2)
