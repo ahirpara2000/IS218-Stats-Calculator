@@ -58,5 +58,5 @@ class StatsOps:
         z_score_list = []
         for num in data:
             z_score = (num - data_mean) / data_sd
-            z_score_list.append(z_score)
+            z_score_list.append(round(z_score, 4))
         return z_score_list
