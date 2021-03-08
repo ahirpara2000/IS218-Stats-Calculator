@@ -28,3 +28,7 @@ class MyTestCase(unittest.TestCase):
     def test_mod_method_statistics(self):
         self.assertEqual(self.statistics.mode([1, 2, 2, 3, 3, 2]), 2)
         self.assertEqual(self.statistics.result, 2)
+
+    def test_variance_method_statistics(self):
+        self.assertEqual(self.statistics.variance([6, 3, 8, 5, 3]), 3.6)
+        self.assertEqual(self.statistics.result, 3.6)

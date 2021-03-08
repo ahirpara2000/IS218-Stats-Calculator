@@ -1,5 +1,5 @@
 from Calculator.Operations.operations import Operations
-from Statistics.Statistics import Statistics
+
 
 class StatsOps:
 
@@ -38,7 +38,7 @@ class StatsOps:
 
     @staticmethod
     def variance(data):
-        data_mean = Statistics.mean(data)
+        data_mean = StatsOps.mean(data)
         x = 0
 
         for num in data:
