@@ -32,3 +32,7 @@ class MyTestCase(unittest.TestCase):
     def test_variance_method_statistics(self):
         self.assertEqual(self.statistics.variance([6, 3, 8, 5, 3]), 3.6)
         self.assertEqual(self.statistics.result, 3.6)
+
+    def test_std_deviation_method_statistics(self):
+        self.assertEqual(self.statistics.std_deviation([6, 3, 8, 5, 3]), 1.8973666)
+        self.assertEqual(self.statistics.result, 1.8973666)

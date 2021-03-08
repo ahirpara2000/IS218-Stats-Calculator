@@ -27,3 +27,7 @@ class Statistics(Calculator):
     def std_deviation(self, data):
         self.result = StatsOps.std_deviation(data)
         return self.result
+
+    def z_score(self, data):
+        self.result = StatsOps.z_score(data)
+        return self.result

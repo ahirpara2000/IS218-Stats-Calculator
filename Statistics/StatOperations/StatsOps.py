@@ -50,3 +50,13 @@ class StatsOps:
     def std_deviation(data):
         data_variance = StatsOps.variance(data)
         return Operations.square_root(data_variance)
+
+    @staticmethod
+    def z_score(data):
+        data_mean = StatsOps.mean(data)
+        data_sd = StatsOps.std_deviation(data)
+        z_score_list = []
+        for num in data:
+            z_score = (num - data_mean) / data_sd
+            z_score_list.append(z_score)
+        return z_score_list
