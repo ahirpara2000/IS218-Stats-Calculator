@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/ahirpara2000/IS218-Stats-Calculator.svg?branch=main)](https://travis-ci.com/github/ahirpara2000/IS218-Stats-Calculator/builds/219243672)
+[![Build Status](https://travis-ci.com/ahirpara2000/IS218-Stats-Calculator.svg?token=h1ZorcTzYBqoVuE8Wixa&branch=main)](https://travis-ci.com/github/ahirpara2000/IS218-Stats-Calculator)
 
 # calculator
 
