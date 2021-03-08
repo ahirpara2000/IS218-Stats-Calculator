@@ -20,7 +20,7 @@ class Operations:
         try:
             return round(float(b) / float(a), 9)
         except ZeroDivisionError:
-            return "Can't divide a number by zero"
+            return "Error: can't divide by zero"
 
     @staticmethod
     def square(a):

@@ -43,3 +43,22 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(self.statistics.z_score(data_input), output)
         self.assertEqual(self.statistics.result, output)
+
+    def test_empty_data_list(self):
+        self.assertEqual(self.statistics.mean([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
+
+        self.assertEqual(self.statistics.median([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
+
+        self.assertEqual(self.statistics.mode([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
+
+        self.assertEqual(self.statistics.variance([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
+
+        self.assertEqual(self.statistics.std_deviation([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
+
+        self.assertEqual(self.statistics.z_score([]), "Error: empty data list")
+        self.assertEqual(self.statistics.result, "Error: empty data list")
