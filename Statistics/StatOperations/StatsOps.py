@@ -42,6 +42,11 @@ class StatsOps:
         x = 0
 
         for num in data:
-            x = x + Operations.squaring(num - data_mean)
+            x = x + Operations.square(num - data_mean)
 
         return Operations.division(len(data), x)
+
+    @staticmethod
+    def std_deviation(data):
+        data_variance = StatsOps.variance(data)
+        return Operations.square_root(data_variance)

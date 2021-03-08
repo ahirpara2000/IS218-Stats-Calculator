@@ -23,9 +23,9 @@ class Operations:
             return "Can't divide a number by zero"
 
     @staticmethod
-    def squaring(a):
+    def square(a):
         return float(a) ** 2
 
     @staticmethod
-    def squarerooting(a):
+    def square_root(a):
         return round((float(a) ** .5), 8)

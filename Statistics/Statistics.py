@@ -23,3 +23,7 @@ class Statistics(Calculator):
     def variance(self, data):
         self.result = StatsOps.variance(data)
         return self.result
+
+    def std_deviation(self, data):
+        self.result = StatsOps.std_deviation(data)
+        return self.result

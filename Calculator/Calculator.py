@@ -24,9 +24,9 @@ class Calculator:
         return self.result
 
     def square(self, a):
-        self.result = Operations.squaring(a)
+        self.result = Operations.square(a)
         return self.result
 
     def squareroot(self, a):
-        self.result = Operations.squarerooting(a)
+        self.result = Operations.square_root(a)
         return self.result
